@@ -1,0 +1,24 @@
+
+#ifndef __OPENTUN_VERSION_H_INCLUDED__
+#define __OPENTUN_VERSION_H_INCLUDED__
+
+//
+// Version format: <major>.<minor>.<patch>  <suffix>
+//
+#define OPENTUN_VERSION_MAJOR       (@PROJECT_VERSION_MAJOR@)
+#define OPENTUN_VERSION_MINOR       (@PROJECT_VERSION_MINOR@)
+#define OPENTUN_VERSION_PATCH       (@PROJECT_VERSION_PATCH@)
+
+// Suffix could be: pre-alpha, alpha, beta, rc, stable
+#define OPENTUN_VERSION_SUFFIX      "@OPENTUN_VERSION_SUFFIX@"
+
+
+//
+// Git branch and full commit hash which we built from
+// TODO: What if we are not building from a git repository?
+//
+#define OPENTUN_GIT_BRANCH          "@OPENTUN_GIT_BRANCH@"
+#define OPENTUN_GIT_COMMIT_HASH     "@OPENTUN_GIT_COMMIT_HASH@"
+
+
+#endif  // __OPENTUN_VERSION_H_INCLUDED__
